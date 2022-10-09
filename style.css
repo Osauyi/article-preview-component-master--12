@@ -1,0 +1,145 @@
+:root {
+  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--Light-Grayish-Blue);
+}
+
+h1 {
+  color: var(--Very-Dark-Grayish-Blue);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 8px;
+}
+
+h2 {
+  color: var(--Very-Dark-Grayish-Blue);
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin: 0px;
+}
+
+p {
+  color: var(--Desaturated-Dark-Blue);
+  font-weight: 500;
+  font-size: .9rem;
+  line-height: 1.3rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 450px;
+  max-height: 290px;
+  background-color: #ffff;
+  padding: 20px 25px 20px 40px;
+  z-index: 1;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.drawersImg {
+
+  max-width: 350px;
+  max-height: 290px;
+  position: relative;
+  left: 75px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.AvatarPfp img {
+  border-radius: 50%;
+  max-width: 40px;
+}
+
+.AvatarName,
+.AvatarPfp {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.AvatarName {
+  margin-left: 15px;
+}
+
+.AvatarName p {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.profileBox {
+  margin-bottom: 15px;
+}
+
+button {
+  border: none;
+  background-color: var(--Light-Grayish-Blue);
+  border-radius: 100%;
+  padding: 8px 10px 8px 10px;
+  float: right;
+  width: 40px;
+}
+
+button img{
+  margin-bottom: 4px;
+}
+
+
+.popover{
+    background: var(--Very-Dark-Grayish-Blue);
+    
+}
+
+.popover-arrow{
+  color: var(--Very-Dark-Grayish-Blue);
+}
+
+.popover-arrow-color{
+  color: red;
+}
+
+ .popover-body{
+  color: var(--Grayish-Blue);
+  letter-spacing: 0.5rem;
+  font-size: 0.75rem;
+ }
+
+footer{
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 376px) {
+
+  main{
+    display: block;
+    margin: 10px;
+  }
+
+  .drawersImg{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    left: 75px;
+  }
+
+  section{
+    width: 20px ;
+    border-radius: 0px 0px 10px 10px;
+  }
+}
